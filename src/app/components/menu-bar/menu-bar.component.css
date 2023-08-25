@@ -1,0 +1,52 @@
+.menu-bar-container {
+  width: 100%;
+  min-height: 60px;
+  background-color: #ffffff;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  z-index: 999;
+}
+
+.menu-bar-logo {
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-bar-items {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.menu-bar-items > ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.menu-bar-items > ul > li {
+  padding: 5px;
+}
+
+.menu-bar-items > ul > li > a {
+  color: rgba(7, 7, 7);
+  font-family: 'Segoe UI';
+  font-weight: 500;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 24px;
+  transition: background-color 0.3s ease-out; /* Adicionando a transição para o estado normal */
+}
+
+.menu-bar-items > ul > li > a:hover {
+  background-color: #CED5DA;
+  transition: background-color 0.25s ease-in;
+}
