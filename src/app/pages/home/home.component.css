@@ -1,4 +1,10 @@
-.home-container{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-container {
   width: 90%;
   margin: auto;
   padding: 50px;
@@ -7,4 +13,92 @@
   align-items: baseline;
   flex-wrap: wrap;
   column-gap: 20px;
+}
+
+.black {
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.game-container {
+  width: 70%;
+  padding-bottom: 60px;
+  padding-right: 20px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 1px 10px 5px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container > app-detail-card {
+  margin-left: 20px;
+}
+
+.game-details {
+  width: 800px;
+  min-width: 200px;
+  margin-top: 60px;
+  margin-left: 20px;
+  color: black;
+}
+
+@media (max-width: 1441px)) {
+  .game-container {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .game-container {
+    width: 80%;
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }
+
+  .game-details {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 769px) {
+  .game-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 481px) {
+  .black {
+    overflow-y: scroll;
+  }
+
+  .game-container {
+    width: 100%;
+    margin-top: 600px;
+  }
+
+  .game-details {
+    width: 100%;
+  }
+}
+
+@media (max-width: 361px) {
+  .game-container {
+    margin-top: 850px;
+    border-radius: 0px;
+  }
+
+  .card-container {
+    width: 300px;
+    height: 400px;
+    margin-top: 120px;
+  }
 }

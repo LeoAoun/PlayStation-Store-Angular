@@ -6,7 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   position: fixed;
-  z-index: 999;
+  z-index: 1;
 }
 
 .menu-bar-logo {
@@ -29,7 +29,6 @@
   gap: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-
 }
 
 .menu-bar-items > ul > li {
@@ -38,7 +37,7 @@
 
 .menu-bar-items > ul > li > a {
   color: rgba(7, 7, 7);
-  font-family: 'Segoe UI';
+  font-family: "Segoe UI";
   font-weight: 500;
   text-decoration: none;
   padding: 4px 10px;
@@ -47,6 +46,6 @@
 }
 
 .menu-bar-items > ul > li > a:hover {
-  background-color: #CED5DA;
+  background-color: #ced5da;
   transition: background-color 0.25s ease-in;
 }

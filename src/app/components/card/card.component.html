@@ -1,8 +1,10 @@
-<a href="" class="card-container">
+<div href="" class="card-container">
   <img [src]="[gameCover]" alt="" class="card-img" />
 
-  <app-card-label gameLabel="{{ gameLabel }}"></app-card-label>
+  <app-card-label gameLabel="{{ gameLabel }}"> </app-card-label>
 
-  <app-card-pricing gameType="{{ gameType }}" gamePrice="{{ gamePrice }}">
-  </app-card-pricing>
-</a>
+  <app-card-pricing
+    gameType="{{ gameType }}"
+    gamePrice="{{ gamePrice }}"
+  ></app-card-pricing>
+</div>

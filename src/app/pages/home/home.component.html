@@ -1,38 +1,120 @@
 <div class="home-container">
   <app-card
-    gameCover="assets/bt-hardline.jpg"
+    gameCover="../assets/bt-hardline.jpg"
     gameLabel="NEW"
     gameType="DIGITAL | PS3 PS4 PS5"
     gamePrice="R$ 299,99"
+    (click)="
+      showGameDetails({
+        gameCover: 'assets/bt-hardline.jpg',
+        gameLabel: 'NEW',
+        gameType: 'DIGITAL | PS3 PS4 PS5',
+        gamePrice: 'R$ 299,99'
+      })
+    "
   ></app-card>
   <app-card
     gameCover="assets/ac-cover.jpg"
     gameLabel="BEST OF YEAR"
     gameType="DIGITAL PS5"
     gamePrice="R$ 369,99"
+    (click)="
+      showGameDetails({
+        gameCover: 'assets/ac-cover.jpg',
+        gameLabel: 'BEST OF YEAR',
+        gameType: 'DIGITAL PS5',
+        gamePrice: 'R$ 369,99'
+      })
+    "
   ></app-card>
   <app-card
     gameCover="assets/bt-1.jpg"
     gameLabel="DIGITAL"
     gameType="DIGITAL | PS4"
     gamePrice="R$ 129,99"
+    (click)="
+      showGameDetails({
+        gameCover: 'assets/bt-1.jpg',
+        gameLabel: 'DIGITAL',
+        gameType: 'DIGITAL | PS4',
+        gamePrice: 'R$ 129,99'
+      })
+    "
   ></app-card>
   <app-card
     gameCover="assets/bt-4.jpg"
     gameLabel="EXCLUSIVE"
     gameType="DISC | PS5"
     gamePrice="R$ 269,99"
+    (click)="
+      showGameDetails({
+        gameCover: 'assets/bt-4.jpg',
+        gameLabel: 'EXCLUSIVE',
+        gameType: 'DISC | PS5',
+        gamePrice: 'R$ 269,99'
+      })
+    "
   ></app-card>
   <app-card
     gameCover="assets/bt-5.jpg"
     gameLabel="DIGITAL"
     gameType="DIGITAL | PS4"
     gamePrice="R$ 269,99"
+    (click)="
+      showGameDetails({
+        gameCover: 'assets/bt-5.jpg',
+        gameLabel: 'DIGITAL',
+        gameType: 'DIGITAL | PS4',
+        gamePrice: 'R$ 269,99'
+      })
+    "
   ></app-card>
   <app-card
     gameCover="assets/bt-bad-company-2.jpg"
     gameLabel="OLD BUT GOLD"
     gameType="DIGITAL | PS3 PS4"
     gamePrice="R$ 199,99"
+    (click)="
+      showGameDetails({
+        gameCover: 'assets/bt-bad-company-2.jpg',
+        gameLabel: 'OLD BUT GOLD',
+        gameType: 'DIGITAL | PS3 PS4',
+        gamePrice: 'R$ 99,99'
+      })
+    "
   ></app-card>
+</div>
+
+<div *ngIf="true" [ngStyle]="style" (click)="Hide()" class="black">
+  <div class="game-container">
+    <app-card-detail
+      gameDetailCover="assets/bt-bad-company-2.jpg"
+      [gameDetailLabel]="selectedGameDetails.gameLabel"
+      [gameDetailType]="selectedGameDetails.gameType"
+      [gameDetailPrice]="selectedGameDetails.gamePrice"
+    >
+    </app-card-detail>
+    <span class="game-details">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ratione sunt
+      animi voluptatem, cupiditate, doloremque, ut eius officiis optio vero
+      commodi aliquam. Magni commodi animi praesentium aspernatur omnis.
+      Repudiandae, at. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Nam ratione sunt animi voluptatem, cupiditate, doloremque, ut eius
+      officiis optio vero commodi aliquam. Magni commodi animi praesentium
+      aspernatur omnis. Repudiandae, at. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Nam ratione sunt animi voluptatem, cupiditate,
+      doloremque, ut eius officiis optio vero commodi aliquam. Magni commodi
+      animi praesentium aspernatur omnis. Repudiandae, at. Lorem ipsum dolor sit
+      amet consectetur adipisicing elit. Nam ratione sunt animi voluptatem,
+      cupiditate, doloremque, ut eius officiis optio vero commodi aliquam. Magni
+      commodi animi praesentium aspernatur omnis. Repudiandae, at. Lorem ipsum
+      dolor sit amet consectetur adipisicing elit. Nam ratione sunt animi
+      voluptatem, cupiditate, doloremque, ut eius officiis optio vero commodi
+      aliquam. Magni commodi animi praesentium aspernatur omnis. Repudiandae,
+      at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ratione
+      sunt animi voluptatem, cupiditate, doloremque, ut eius officiis optio vero
+      commodi aliquam. Magni commodi animi praesentium aspernatur omnis.
+      Repudiandae, at.
+    </span>
+  </div>
 </div>
